@@ -20,6 +20,7 @@ body {
   min-height: 100vh;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 18px;
+  box-sizing: border-box;
 }
 
 main {
@@ -57,6 +58,9 @@ main {
   border-radius: 50%;
 }
 
+.resultsHead {
+  font-size: 1.2rem;
+}
 .mainScore {
   font-size: 2.5rem;
   font-weight: 800;
@@ -77,4 +81,41 @@ main {
   margin: 1rem 0 0 0;
   font-size: 0.9rem;
   color: var(--lightLavender);
+}
+
+/* display info section */
+
+.displayInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  margin: 2rem;
+  width: auto;
+}
+
+.displayHeader {
+  font-size: 1.1rem;
+  align-self: flex-start;
+}
+
+.scoreBox {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+
+  border: 1px solid;
+  border-radius: 10px;
+
+  padding: 0.8rem;
+  box-sizing: border-box;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
 }
