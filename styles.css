@@ -128,54 +128,46 @@ main {
   top: 0;
   left: 0;
   border-radius: 5px 0 0 0;
-  border-top: 1.5px solid #ff7777;
-  border-left: 1.5px solid #ff7777;
+  border-top: 1.5px solid;
+  border-left: 1.5px solid;
 }
 
 .topRight {
   top: 0;
   right: 0;
   border-radius: 0 5px 0 0;
-  border-top: 1.5px solid #ff7777;
-  border-right: 1.5px solid #ff7777;
+  border-top: 1.5px solid;
+  border-right: 1.5px solid;
 }
 
 .btmLeft {
   bottom: 0;
   left: 0;
   border-radius: 0 0 0 5px;
-  border-bottom: 1.5px solid #ff7777;
-  border-left: 1.5px solid #ff7777;
+  border-bottom: 1.5px solid;
+  border-left: 1.5px solid;
 }
 
 .btmRight {
   bottom: 0;
   right: 0;
   border-radius: 0 0 5px 0;
-  border-bottom: 1.5px solid #ff7777;
-  border-right: 1.5px solid #ff7777;
+  border-bottom: 1.5px solid;
+  border-right: 1.5px solid;
 }
 
 .reaction .topRight,
 .reaction .topLeft,
 .reaction .btmLeft,
-.reaction .btmRight {
-  border-color: inherit;
-}
-
+.reaction .btmRight,
 .memory .topRight,
 .memory .topLeft,
 .memory .btmLeft,
-.memory .btmRight {
-  border-color: inherit;
-}
-
+.memory .btmRight,
 .verbal .topRight,
 .verbal .topLeft,
 .verbal .btmLeft,
-.verbal .btmRight {
-  border-color: inherit;
-}
+.verbal .btmRight,
 .visual .topRight,
 .visual .topLeft,
 .visual .btmLeft,
@@ -236,4 +228,21 @@ main {
 .scoreBox.visual {
   color: hsla(234, 85%, 45%, 0.05);
   background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.continueBtn {
+  font-size: 1rem;
+  font-weight: 600;
+  width: 100%;
+  padding: 0.8rem 2rem;
+
+  border-radius: 25px;
+  border: none;
+
+  color: var(--white);
+  background-color: var(--darkGrayBlue);
+}
+
+.continueBtn:hover {
+  cursor: pointer;
 }
