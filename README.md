@@ -20,7 +20,7 @@ This is my version of the results summary component.
 
 ### Screenshot
 
-![](./images/desktopResults.jpg)
+![](.assets/images/desktopResults.jpg)
 
 ### Links
 
