@@ -1,30 +1,17 @@
-// function test() {
-//   fetch("data.json")
-//     .then((response) => response.json())
-//     .then((data) => {
-//       console.log(data);
-//     });
-// }
-
-// test();
-
-const test = async () => {
+const updateComponents = async () => {
   const info = await fetch("data.json");
 
   const infoResults = await info.json();
   const scoreHolder = [];
 
   infoResults.forEach((item) => {
-    // console.log(item.score);
-
     scoreHolder.push(item.score.toString());
   });
 
-  console.log(scoreHolder);
-  updateComponents(scoreHolder);
+  updateComponentsHelper(scoreHolder);
 };
 
-const updateComponents = (arr) => {
+const updateComponentsHelper = (arr) => {
   const reaction = document.querySelector(".reaction .yourScore");
   const memory = document.querySelector(".memory .yourScore");
   const verbal = document.querySelector(".verbal .yourScore");
@@ -36,5 +23,4 @@ const updateComponents = (arr) => {
   visual.textContent = arr[3];
 };
 
-// updateComponents();
-test();
+updateComponents();
